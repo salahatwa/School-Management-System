@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <body>
+
+        <ui:composition template="./../admin.xhtml">
+
+            <ui:define name="adminContent">
+                <section class="content">
+                    <div class="row">
+
+                        <div class="center"><button data-toggle="modal" data-target="#squarespaceModal" class="btn btn-primary center-block">Add New Student</button></div>
+
+                        <ui:include src="addNewStudentForm.xhtml"/>
+                      
+                    </div>
+                    
+                    <div class="row">
+                        <section class="content">
+                         display student data here
+                        </section>
+                    </div>
+                </section>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

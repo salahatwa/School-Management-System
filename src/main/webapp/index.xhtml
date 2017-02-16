@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+       xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <body>
+
+        <ui:composition template="./templates/homeTemplate.xhtml">
+
+            <ui:define name="content">
+                <!--welcome-->
+                <div class="welcome">
+                    <div class="container">
+                        <h2>Welcome To Education Tutorial</h2>
+                        <h:form styleClass="form-inline" id="loginReg" >
+                            <div class="form-group">
+                                <label for="email">Email address:</label>
+                                <h:inputText  styleClass="form-control" id="email" value="#{hello.msg}"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Password:</label>
+                                <h:inputSecret type="password" styleClass="form-control" id="pwd"/>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox"/> Remember me</label>
+                            </div>
+                            <h:commandButton styleClass="btn btn-default" value="Login"  action="#{hello.login()}" a:data-loading-text="Please wait...">
+                             <f:ajax  execute="@form" render="loginReg" />
+                            </h:commandButton>
+                        </h:form>
+                    </div>
+                </div>
+                <!--/welcome-->
+
+                <div class="welcome-grids">
+                    <div class="container">
+                        <div class="welcome-gridsinfo">
+                            <div class="col-md-3 welcome-grid">
+                                <i class="glyphicon glyphicon-pencil"> </i>
+                                <h3>Prehistory</h3>
+                                <p>Education began in the earliest prehistory, as adults trained the young in the knowledge and skills deemed necessary in their.</p>
+                            </div>
+                            <div class="col-md-3 welcome-grid">
+                                <i class="glyphicon glyphicon-font"> </i>
+                                <h3>Prehistory</h3>
+                                <p>Education began in the earliest prehistory, as adults trained the young in the knowledge and skills deemed necessary in their.</p>
+                            </div>
+                            <div class="col-md-3 welcome-grid">
+                                <i class="glyphicon glyphicon-blackboard"> </i>
+                                <h3>Prehistory</h3>
+                                <p>Education began in the earliest prehistory, as adults trained the young in the knowledge and skills deemed necessary in their.</p>
+                            </div>
+                            <div class="col-md-3 welcome-grid">
+                                <i class="glyphicon glyphicon-education"> </i>
+                                <h3>Prehistory</h3>
+                                <p>Education began in the earliest prehistory, as adults trained the young in the knowledge and skills deemed necessary in their.</p>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--effect-grid-->
+                <div class="effect-grid">
+                    <div class="container">
+                        <ul class="grid cs-style-5">
+                            <li>
+                                <figure>
+                                    <h:graphicImage library="img" name="a1.jpg" alt="img03"/>
+                                    <figcaption>
+                                        <h3>Technology</h3>
+                                        <span>Jacob Cummings</span>
+                                        <a href="about.xhtml">Read More</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <h:graphicImage library="img" name="a2.jpg" alt="img02"/>
+                                    <figcaption>
+                                        <h3>Preparing</h3>
+                                        <span>Jacob Cummings</span>
+                                        <a href="about.xhtml">Read More</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <h:graphicImage library="img" name="a3.jpg" alt="img03"/>
+                                    <figcaption>
+                                        <h3>Pencils</h3>
+                                        <span>Jacob Cummings</span>
+                                        <a href="about.xhtml">Read More</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <h:graphicImage library="img" name="a4.jpg" alt="img02"/>
+                                    <figcaption>
+                                        <h3>Home Work</h3>
+                                        <span>Jacob Cummings</span>
+                                        <a href="about.xhtml">Read More</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <h:graphicImage library="img" name="a5.jpg" alt="img06"/>
+                                    <figcaption>
+                                        <h3>Waiting</h3>
+                                        <span>Jacob Cummings</span>
+                                        <a href="about.xhtml">Read More</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <h:graphicImage library="img" name="a6.jpg" alt="img06"/>
+                                    <figcaption>
+                                        <h3>Mistake</h3>
+                                        <span>Jacob Cummings</span>
+                                        <a href="about.xhtml">Read More</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--\effect-grid-->
+
+                <!--specfication-->
+                <div class="news">
+                    <div class="container">
+                        <div class="news-text">
+                            <h3>Latest News</h3>
+                            <p>Cras porttitor imperdiet volutpat nulla malesuada lectus eros<br /><span>ut convallis felis consectetur ut </span></p>
+                        </div>
+                        <div class="news-grids">
+                            <div class="col-md-3 news-grid">
+                                <a href="#"><h4>Integer vitae ligula sed lectus</h4></a>
+                                <span>8.00 - 10.00 | JUN 09,2015</span>
+                                <a href="#" class="mask"><h:graphicImage library="img" name="img1.jpg" alt="image" class="img-responsive zoom-img"/></a>
+                                <div class="news-info">
+                                    <p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 news-grid">
+                                <a href="#"><h4>Integer vitae ligula sed lectus</h4></a>
+                                <span>10.00 - 12.00 | sep 24,2015</span>
+                                <a href="#" class="mask"><h:graphicImage library="img" name="img2.jpg" alt="image" class="img-responsive zoom-img"/></a>
+                                <div class="news-info">
+                                    <p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 news-grid">
+                                <a href="#"><h4>Integer vitae ligula sed lectus</h4></a>
+                                <span>9.00 - 10.00 | FEB 15,2015</span>
+                                <a href="#" class="mask"><h:graphicImage library="img" name="img3.jpg" alt="image" class="img-responsive zoom-img"/></a>
+                                <div class="news-info">
+                                    <p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 news-grid">
+                                <a href="#"><h4>Integer vitae ligula sed lectus</h4></a>
+                                <span>11.00 - 10.00 | JUN 10,2015</span>
+                                <a href="#" class="mask"><h:graphicImage library="img" name="img4.jpg" alt="image" class="img-responsive zoom-img"/></a>
+                                <div class="news-info">
+                                    <p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/specfication--> 
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>School</title>
+
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <!--bootstrap-->
+        <h:outputStylesheet library="css" name="bootstrap.css"/>
+        <!--coustom css-->
+        <h:outputStylesheet library="css" name="style.css"/>
+        <!--script-->
+        <h:outputScript library="js" name="jquery-1.11.0.min.js"/>
+        <!-- js -->
+        <h:outputScript library="js" name="bootstrap.js"/>
+        <!-- /js -->
+        <!--fonts-->
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:300,300italic,400italic,400,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'/>
+        <!--/fonts-->
+        <!--hover-girds-->
+        <h:outputStylesheet library="css" name="default.css"/>
+        <h:outputStylesheet library="css" name="component.css"/>
+        <h:outputScript library="js" name="modernizr.custom.js"/>
+
+        <h:outputScript library="js" name="move-top.js"/>
+        <h:outputScript library="js" name="easing.js"/>
+
+        <!--script-->
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $(".scroll").click(function(event) {
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop: $(this.hash).offset().top}, 900);
+                });
+            });
+        </script>
+    </h:head>
+    <h:body>
+
+        <!--header-->
+        <div class="header" id="home">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"> </span>
+                            <span class="icon-bar"> </span>
+                            <span class="icon-bar"> </span>
+                        </button>
+                        <h1><a class="navbar-brand" href="adminTemplate.xhtml">Education<br /><span>Tutorial</span></a></h1>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right margin-top cl-effect-2">
+                            <li><a href="adminTemplate.xhtml"><span data-hover="Home">Home</span></a></li>
+                            <li><a href="about.xhtml"><span data-hover="About">About</span></a></li>
+                            <li><a href="typography.xhtml"><span data-hover="Shortcodes">Shortcodes</span></a></li>
+                            <li><a href="gallery.xhtml"><span data-hover="Gallery">Gallery</span></a></li>
+                            <li><a href="contact.xhtml"><span data-hover="Contact">Contact</span></a></li>
+                            <li><a href="login">Login</a></li>
+                        </ul>
+                        <div class="clearfix"> </div>
+                    </div><!-- /.navbar-collapse -->
+                    <!-- /.container-fluid -->
+
+
+                    <h:outputScript library="js" name="menu_jquery.js"/>
+
+                </div>
+            </nav>
+            <!--/script-->
+            <div class="clearfix"> </div>
+        </div>
+        <!--header-->
+
+        <ui:insert name="content">
+
+          
+
+        </ui:insert>
+
+        <!--footer-->
+        <div class="footer">
+            <!-- container -->
+            <div class="container">
+                <div class="col-md-6 footer-left">
+                    <ul>
+                        <li><a href="adminTemplate.xhtml">Home</a></li>
+                        <li><a href="about.xhtml">About</a></li>
+                        <li><a href="typography.xhtml">Shortcodes</a></li>
+                        <li><a href="gallery.xhtml">Gallery</a></li>
+                        <li><a href="contact.xhtml">Contact</a></li>
+                    </ul>
+                    <form>
+                        <input type="text" placeholder="Email" required=""/>
+                        <input type="submit" value="Subscribe"/>
+                    </form>
+                </div>
+                <div class="col-md-3 footer-middle">
+                    <h3>Address</h3>
+                    <div class="address">
+                        <p>756 gt globel Place,
+                            <span>CD-Road,M 07 435.</span>
+                        </p>
+                    </div>
+                    <div class="phone">
+                        <p>+1(100)2345-6789</p>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-right">
+                    <h3>Book Info</h3>
+                    <p>Proin eget ipsum ultrices, aliquet velit eget, tempus tortor. Phasellus non velit sit amet diam faucibus molestie tincidunt efficitur nisi.</p>
+                </div>
+                <div class="clearfix"> </div>	
+            </div>
+            <!-- //container -->
+        </div>
+        <!--/footer-->
+
+        <!--copy-rights-->
+        <div class="copyright">
+            <!-- container -->
+            <div class="container">
+                <div class="copyright-left">
+                    <p>© 2015 Education Tutorial. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+                </div>
+                <div class="copyright-right">
+                    <ul>
+                        <li><a href="#" class="twitter"> </a></li>
+                        <li><a href="#" class="twitter facebook"> </a></li>
+                        <li><a href="#" class="twitter chrome"> </a></li>
+                        <li><a href="#" class="twitter pinterest"> </a></li>
+                        <li><a href="#" class="twitter linkedin"> </a></li>
+                        <li><a href="#" class="twitter dribbble"> </a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+
+            </div>
+            <!-- //container -->
+            <!---->
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    /*
+                     var defaults = {
+                     containerID: 'toTop', // fading element id
+                     containerHoverID: 'toTopHover', // fading element hover id
+                     scrollSpeed: 1200,
+                     easingType: 'linear' 
+                     };
+                     */
+                    $().UItoTop({easingType: 'easeOutQuart'});
+                });
+            </script>
+            <a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+            <!----> 
+        </div>
+        <!--/copy-rights-->
+    </h:body>
+</html>
+

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+    xmlns:f="http://xmlns.jcp.org/jsf/core"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h3 class="modal-title" id="lineModalLabel">Add New Student</h3>
+                </div>
+                <div class="modal-body">
+
+                    <!-- content goes here -->
+                    <h:form>
+                       
+                        <div class="form-group">
+                            <label for="fname">First Name</label>
+                            <h:inputText  class="form-control" id="fname" a:placeholder="Enter first name"/>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lname">Last Name</label>
+                            <h:inputText  class="form-control" id="lname" a:placeholder="Enter last name"/>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <h:inputText  class="form-control" id="phone" a:placeholder="Enter phone number"/>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="rel">Releigion</label>
+                            <h:inputText  class="form-control" id="rel" a:placeholder="Enter religion"/>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <h:inputText  class="form-control" id="email" a:placeholder="Enter email"/>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pass">Password</label>
+                            <h:inputSecret  class="form-control" id="pass" a:placeholder="Password"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <h:selectOneRadio class="form-control" id="gender" value="Gender">
+                                <f:selectItem itemValue="Male" itemLabel="Male" />
+                                <f:selectItem itemValue="Female" itemLabel="Female" />
+                            </h:selectOneRadio>
+                        </div>
+                        <!--                        <div class="form-group">
+                                                    <label for="exampleInputFile">File input</label>
+                                                    <input type="file" id="exampleInputFile"/>
+                                                    <p class="help-block">Example block-level help text here.</p>
+                                                </div>-->
+                        <!--                        <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"/> Check me out
+                                                    </label>
+                                                </div>-->
+                        <h:commandButton value="Add Student" class="btn btn-success"/>
+                    </h:form>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"  role="button">Close</button>
+                        </div>
+                        <div class="btn-group btn-delete hidden" role="group">
+                            <button type="button" id="delImage" class="btn btn-default btn-hover-red" data-dismiss="modal"  role="button">Delete</button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" id="saveImage" class="btn btn-default btn-hover-green" data-action="save" role="button">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ui:composition>
+
+

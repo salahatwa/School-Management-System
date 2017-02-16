@@ -1,0 +1,39 @@
+<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
+                      http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
+ 
+    <!--  http://www.ocpsoft.org/docs/prettyfaces/3.3.3/en-US/html/Configuration.html -->
+    <url-mapping id="home">
+        <pattern value="/home" /> <!--url pattern-->
+        <view-id>/faces/index.xhtml</view-id> <!--name of the page you want to change the url-->
+    </url-mapping>
+    
+    <url-mapping id="login">
+        <pattern value="/login" /> <!-- url pattern -->
+        <view-id>/faces/login.xhtml</view-id>  <!--name of the page you want to change the url -->
+    </url-mapping>
+    
+    <url-mapping id="admin">
+        <pattern value="/admin" /> <!--url pattern-->
+        <view-id>/faces/admin.xhtml</view-id> <!--name of the page you want to change the url-->
+    </url-mapping>
+    
+    
+    <url-mapping id="addStage">
+        <pattern value="/addStage" /> <!--url pattern-->
+        <view-id>/faces/adminPages/addStage.xhtml</view-id> <!--name of the page you want to change the url-->
+    </url-mapping>
+    
+    <url-mapping id="addStudent">
+        <pattern value="/addStudent" /> <!--url pattern-->
+        <view-id>/faces/adminPages/addStudent.xhtml</view-id> <!--name of the page you want to change the url-->
+    </url-mapping>
+    
+    <url-mapping id="addTeacher">
+        <pattern value="/addTeacher" /> <!--url pattern-->
+        <view-id>/faces/adminPages/addTeacher.xhtml</view-id> <!--name of the page you want to change the url-->
+    </url-mapping>
+    
+    
+</pretty-config>

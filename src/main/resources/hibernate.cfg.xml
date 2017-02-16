@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+    <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+    <property name="hibernate.connection.url">jdbc:oracle:thin:@127.0.0.1:1521/orcl</property>
+    <property name="hibernate.connection.username">school</property>
+    <property name="hibernate.connection.password">school</property>
+    <!--<property name="hibernate.show_sql">true</property>-->
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="hibernate.connection.autocommit">false</property>
+    <!--<property name="hibernate.enable_lazy_load_no_trans">true</property>-->
+    <mapping class="com.school.db.user.Stuff"/>
+    <mapping class="com.school.db.user.PersonalInfo"/>
+    <mapping class="com.school.db.user.Nationality"/>
+    <mapping class="com.school.db.user.StudentNotes"/>
+    <mapping class="com.school.db.user.FamilyInformation"/>
+    <mapping class="com.school.db.user.Student"/>
+    <mapping class="com.school.db.user.Teacher"/>
+    
+    <mapping class="com.school.db.country.Country"/>
+    <mapping class="com.school.db.country.State"/>
+    
+    <mapping class="com.school.db.school.Classes"/>
+    <mapping class="com.school.db.school.Stage"/>
+    <mapping class="com.school.db.school.RowsOFStage"/>
+    <mapping class="com.school.db.school.Subject"/>
+    
+    <mapping class="com.school.db.exam.Question_Choise"/>
+    <mapping class="com.school.db.exam.Answers"/>
+    <mapping class="com.school.db.exam.Exam"/>
+    <mapping class="com.school.db.exam.ExamType"/>
+    <mapping class="com.school.db.exam.Question"/>
+    
+  </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <f:loadBundle basename="com.school.resources.school" var="school"/>
+    <body>
+
+        <ui:composition template="./templates/adminTemplate.xhtml">
+
+            <ui:define name="sideBar">
+                
+            </ui:define>
+
+            <ui:define name="contentHeader">
+                 <section class="content-header">
+                    <h1>
+                        #{school.teacher}
+                        <small>#{school.schoolPanel}</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-dashboard"></i> #{school.home}</a></li>
+                        <li class="active">#{school.teacher}</li>
+                    </ol>
+                </section>
+            </ui:define>
+
+            <ui:define name="pageContent">
+                
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

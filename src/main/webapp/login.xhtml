@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    
+    <h:head>
+        
+        
+    </h:head>
+
+    <body>
+
+        <ui:composition template="./templates/reglogin.xhtml">
+
+            <ui:define name="title">
+                School Login
+            </ui:define>
+
+            <ui:define name="body">
+                
+                 <section id="content" class="m-t-lg wrapper-md animated fadeInUp">    
+                    <div class="container aside-xxl">
+                       
+                        <section class="panel panel-default bg-white m-t-lg">
+                            <header class="panel-heading text-center">
+                                <strong>Sign in</strong>
+                            </header>
+                            <h:form id="loginFormA" class="panel-body wrapper-lg">
+                                <div class="form-group">
+                                    <label class="control-label">User Email</label>
+                                    <h:inputText id="email" value="#{userService.stuff.personalInfo.email}"  a:placeholder="example.com" class="form-control input-lg" required="true">
+                                      <f:validator validatorId="com.school.validators.emailValidator"/>
+                                    </h:inputText>
+                                   <h:message for="email" style="color:red" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Password</label>
+                                    <h:inputSecret value="#{userService.stuff.personalInfo.password}"  id="inputPassword" a:placeholder="Password" class="form-control input-lg" required="true">
+                                      <f:validateLength minimum="6" maximum="25"/>
+                                    </h:inputSecret>
+                                     <h:message for="inputPassword" style="color:red" />
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"/> Keep me logged in
+                                    </label>
+                                </div>
+                                <a href="#" class="pull-right m-t-xs"><small>Forgot password?</small></a>
+                                <h:commandButton id="loginBTN" action="#{userService.login()}"  value="Login" styleClass="btn btn-adn">
+                                   <!--<f:ajax  execute="@form" render=":loginFormA" />-->
+                                    <!--a:data-loading-text="Please wait..."-->
+                                <!--a:data-loading-text="Please wait..."-->
+                                </h:commandButton>
+                                
+                                <h:message for="loginBTN" style="color:red" />
+                                <div class="line line-dashed"></div>
+                                <!--<p class="text-muted text-center"><small>Do not have an account?</small></p>-->
+                                <a href="home" class="btn btn-default b-danger">Back to Home</a>
+                            </h:form>
+                        </section>
+                    </div>
+                </section>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
