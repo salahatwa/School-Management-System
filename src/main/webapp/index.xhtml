@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
-       xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:f="http://java.sun.com/jsf/core"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 
     <body>
@@ -28,7 +28,7 @@
                                 <label><input type="checkbox"/> Remember me</label>
                             </div>
                             <h:commandButton styleClass="btn btn-default" value="Login"  action="#{hello.login()}" a:data-loading-text="Please wait...">
-                             <f:ajax  execute="@form" render="loginReg" />
+                                <f:ajax  execute="@form" render="loginReg" />
                             </h:commandButton>
                         </h:form>
                     </div>

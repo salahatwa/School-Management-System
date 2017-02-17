@@ -2,9 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
-    
+
+
+    <h:head>
+        <script>
+            $(function()
+            {
+                $(document).on('click', '.btn-add', function(e)
+                {
+                    e.preventDefault();
+
+                    var controlForm = $('.controls form:first'),
+                            currentEntry = $(this).parents('.entry:first'),
+                            newEntry = $(currentEntry.clone()).appendTo(controlForm);
+
+                    newEntry.find('input').val('');
+                    controlForm.find('.entry:not(:last) .btn-add')
+                            .removeClass('btn-add').addClass('btn-remove')
+                            .removeClass('btn-success').addClass('btn-danger')
+                            .html('<span class="glyphicon glyphicon-minus"></span>');
+                }).on('click', '.btn-remove', function(e)
+                {
+                    $(this).parents('.entry:first').remove();
+
+                    e.preventDefault();
+                    return false;
+                });
+            });
+        </script>
+    </h:head>
+
 
     <body>
 
@@ -15,134 +45,38 @@
                 <section class="content">
 
                     <div class="row">
-                        <section class="content">
-                        <h1>JSF 2 dataTable example</h1>
-                        <h:form>
-                            <h:dataTable value="#{order.orderList}" var="o"
-                                         styleClass="order-table"
-                                         headerClass="order-table-header"
-                                         rowClasses="order-table-odd-row,order-table-even-row"
-                                         >
-
-                                <h:column>
-
-                                    <f:facet name="header">Order No</f:facet>
-
-                                    <h:inputText value="#{o.orderNo}" size="10" rendered="#{o.editable}" />
-
-                                    <h:outputText value="#{o.orderNo}" rendered="#{not o.editable}" />
-
-                                </h:column>
-
-                                <h:column>
-
-                                    <f:facet name="header">Product Name</f:facet>
-
-                                    <h:inputText value="#{o.productName}" size="20" rendered="#{o.editable}" />
-
-                                    <h:outputText value="#{o.productName}" rendered="#{not o.editable}" />
-
-                                </h:column>
-
-                                <h:column>
-
-                                    <f:facet name="header">Price</f:facet>
-
-                                    <h:inputText value="#{o.price}" size="10" rendered="#{o.editable}" />
-
-                                    <h:outputText value="#{o.price}" rendered="#{not o.editable}" />
-
-                                </h:column>
-
-                                <h:column>
-
-                                    <f:facet name="header">Quantity</f:facet>
-
-                                    <h:inputText value="#{o.qty}" size="5" rendered="#{o.editable}" />
-
-                                    <h:outputText value="#{o.qty}" rendered="#{not o.editable}" />
-
-                                </h:column>
-
-                                <h:column>
-
-                                    <f:facet name="header">Action</f:facet>
-
-                                    <h:commandLink value="Edit" action="#{order.editAction(o)}"
-                                                   rendered="#{not o.editable}" />
-
-                                </h:column>
-
-                            </h:dataTable>
-
-                            <h:commandButton value="Save Changes" action="#{order.saveAction}" />
-
-                        </h:form>
-                        </section>
-                    </div>
-
-
-                    <div class="row">
-                        <section class="content">
-                            <div class="box">
-                                <div class="box-header">
-                                    <h3 class="box-title">All Teachers</h3>
+                        <div class="container">
+                            <div class="row">
+                                <div class="control-group" id="fields">
+                                    <label class="control-label" for="field1">Nice Multiple Form Fields</label>
+                                    <div class="controls"> 
+                                        <form role="form" autocomplete="off">
+                                            <div class="entry input-group col-xs-3">
+                                                <input class="form-control" name="fields[]" type="text" placeholder="Type something" />
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-success btn-add" type="button">
+                                                        <span class="glyphicon glyphicon-plus"></span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                        <br/>
+                                        <small>Press <span class="glyphicon glyphicon-plus gs"></span> to add another form field :)</small>
+                                    </div>
                                 </div>
-                                <!-- /.box-header -->
-                                <div class="box-body">
-                                    <table id="example1" class="table table-bordered table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>Rendering engine</th>
-                                                <th>Browser</th>
-                                                <th>Platform(s)</th>
-                                                <th>Engine version</th>
-                                                <th>CSS grade</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Trident</td>
-                                                <td>Internet
-                                                    Explorer 4.0
-                                                </td>
-                                                <td>Win 95+</td>
-                                                <td> 4</td>
-                                                <td>X</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Trident</td>
-                                                <td>Internet
-                                                    Explorer 5.0
-                                                </td>
-                                                <td>Win 95+</td>
-                                                <td>5</td>
-                                                <td>C</td>
-                                            </tr>
-                                           
-                                        </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Rendering engine</th>
-                                                <th>Browser</th>
-                                                <th>Platform(s)</th>
-                                                <th>Engine version</th>
-                                                <th>CSS grade</th>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
-                                </div>
-                                <!-- /.box-body -->
                             </div>
-                        </section>
+                        </div>
                     </div>
+
 
                 </section>
             </ui:define>
- 
+
+
         </ui:composition>
-        
-        
+
+
+
 
     </body>
 </html>

@@ -1,10 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 
     <f:loadBundle basename="com.school.resources.school" var="school"/>
+   
     <body>
 
         <ui:composition template="./templates/adminTemplate.xhtml">
@@ -13,7 +15,7 @@
                 <ul class="sidebar-menu">
                     <li class="header">Menu</li>
 
-                     <li>
+                    <li>
                         <a href="addStage">
                             <i class="fa fa-th"></i> <span>Stages Management</span>
                             <span class="pull-right-container">
@@ -21,7 +23,7 @@
                             </span>
                         </a>
                     </li>
-                    
+
                     <li>
                         <a href="addStudent">
                             <i class="fa fa-th"></i> <span>Students Management</span>
@@ -262,7 +264,9 @@
             </ui:define>
 
         </ui:composition>
+   
 
     </body>
+    
 
 </html>

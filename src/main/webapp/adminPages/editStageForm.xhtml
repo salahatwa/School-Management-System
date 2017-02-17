@@ -12,17 +12,17 @@
         <div class="container aside-xxl">
 
             <section class="panel panel-default bg-white m-t-lg">
-                <div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal fade" id="editStageModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                                <h3 class="modal-title" id="lineModalLabel">Add New Stage</h3>
+                                <h3 class="modal-title" id="lineModalLabel">Edit Stage</h3>
                             </div>
                             <div class="modal-body">
 
                                 <!-- content goes here -->
-                                <h:form id="addStageForm">
+                                <h:form id="editStageForm">
 
                                     <div class="form-group">
                                         <label for="stage">Stage Name</label>
@@ -36,8 +36,8 @@
                                         </h:selectOneMenu>
                                     </div>
 
-                                    <h:commandButton value="Add Stage"  styleClass="btn btn-success" action="#{stageService.addStage()}" a:data-dismiss="modal">
-                                        <f:ajax  execute="@form" render=":displayStageForm" onevent="function(data) { if (data.status === 'success') { $('#displayStageForm\\:stageDataTable').DataTable() } }"/>
+                                    <h:commandButton value="Save Stage"  styleClass="btn btn-success" action="#{stageService.saveStage(stageService.stage)}" a:data-dismiss="modal">
+                                        <f:ajax   execute="@form" render=":displayStageForm" onevent="function(data) { if (data.status === 'success') { $('#displayStageForm\\:stageDataTable').DataTable() } }"/>
                                     </h:commandButton>
 
                                 </h:form>

@@ -37,8 +37,20 @@
         <h:outputStylesheet library="plugins/daterangepicker" name="daterangepicker.css"  />
         <!-- bootstrap wysihtml5 - text editor -->
         <h:outputStylesheet library="plugins/bootstrap-wysihtml5" name="bootstrap3-wysihtml5.min.css"  />
-        
-         <h:outputStylesheet library="plugins/datatables" name="dataTables.bootstrap.css"  />
+
+        <h:outputStylesheet library="plugins/datatables" name="dataTables.bootstrap.css"  />
+
+        <script>
+
+           
+            $(document).ready(function() {
+                $('#displayStageForm\\:displayStageTable').DataTable();
+            });
+
+            $(document).ready(function() {
+                $('#tes').DataTable();
+            });
+        </script>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -1076,30 +1088,23 @@
         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
         <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
         <script>
-            $.widget.bridge('uibutton', $.ui.button);
+              $.widget.bridge('uibutton', $.ui.button);
         </script>
         <!-- Bootstrap 3.3.6 -->
         <h:outputScript library="bootstrap/js" name="bootstrap.min.js" />
         <!-- Morris.js charts -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-        
+
         <h:outputScript library="plugins/datatables" name="jquery.dataTables.min.js" />
-         <h:outputScript library="plugins/datatables" name="dataTables.bootstrap.min.js" />
- <!-- page script -->
+        <h:outputScript library="plugins/datatables" name="dataTables.bootstrap.min.js" />
+        <!-- page script -->
         <script>
-            $(function() {
-                $("#example1").DataTable();
-                $('#example2').DataTable({
-                    "paging": true,
-                    "lengthChange": false,
-                    "searching": false,
-                    "ordering": true,
-                    "info": true,
-                    "autoWidth": false
-                });
-            });
+              $(function() {
+                  $("#displayStageForm\\:stageDataTable").DataTable();
+
+              });
         </script>
- 
+
         <h:outputScript library="plugins/morris" name="morris.min.js" />
         <!-- Sparkline -->
         <h:outputScript library="plugins/sparkline" name="jquery.sparkline.min.js" />

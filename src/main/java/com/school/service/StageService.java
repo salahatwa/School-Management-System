@@ -31,21 +31,29 @@ public class StageService implements Serializable{
     public StageService() {
      stageDAO=new StageImplement();
     }
-     
-     
     
      public void addStage()
-    {
-//        Stage stage=new Stage();
-//        stage.setStageName(getStage().getStageName());
-//        stage.setStageYear(getStage().getStageYear());
+    { 
         getStageDAO().insertStage(getStage());
     }
+     
+     public void saveStage(Stage stage)
+     {
+        System.out.println("Stage ID:"+stage.getId()+"\t"+stage.getStageName());
+        getStageDAO().updateStage(stage);
+     }
+     
+     public void deleteStage(Stage stage)
+     {
+        getStageDAO().deleteStage(stage);
+     }
     
     public List<Stage> getAllStages()
     {
       return  getStageDAO().getAllStages();
     }
+    
+   
 
     /**
      * @return the stageDAO
@@ -73,6 +81,7 @@ public class StageService implements Serializable{
      */
     public void setStage(Stage stage) {
         this.stage = stage;
+        System.out.println("Selected stage:"+stage.getStageName()+"\t"+stage.getStageYear());
     }
     
 }

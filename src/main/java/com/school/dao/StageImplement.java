@@ -48,12 +48,17 @@ public class StageImplement implements StageDAO{
 
     @Override
     public void deleteStage(Stage stage) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+     hibernateDriver.openSession();
+//      Stage stage =(Stage)hibernateDriver.getSession().get(Stage.class, EmployeeID); 
+         hibernateDriver.getSession().delete(stage); 
+     hibernateDriver.closeSession();
     }
 
     @Override
     public void updateStage(Stage stage) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        hibernateDriver.openSession();
+        hibernateDriver.getSession().update(stage);
+        hibernateDriver.closeSession();
     }
     
 }

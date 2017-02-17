@@ -9,6 +9,7 @@ package com.school.db.school;
 import java.io.Serializable;
 import java.util.LinkedHashSet;
 import java.util.Set;
+import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.persistence.CascadeType;
@@ -21,7 +22,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-
 /**
  *
  * @author Salah Atwa
@@ -29,7 +29,7 @@ import javax.persistence.Table;
 @Entity  
 @Table(name = "STAGE")
 @ManagedBean(name = "stage")
-@SessionScoped
+@ApplicationScoped
 public class Stage implements Serializable {
     
     @Id  
@@ -46,9 +46,10 @@ public class Stage implements Serializable {
     @OneToMany(fetch = FetchType.EAGER,targetEntity = RowsOFStage.class ,cascade = CascadeType.ALL)
     @JoinColumn(name = "stage_id")
     private Set<RowsOFStage> stageRowses;
+    
 
     public Stage() {
-        this.stageRowses = new LinkedHashSet<>();
+        stageRowses = new LinkedHashSet<>();
     }
 
     /**
@@ -106,6 +107,7 @@ public class Stage implements Serializable {
     public void setStageRowses(Set<RowsOFStage> stageRowses) {
         this.stageRowses = stageRowses;
     }
+
     
     
 }

@@ -6,6 +6,7 @@
 
 package com.school.db.setting;
 
+import java.io.Serializable;
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 import org.hibernate.Session;
@@ -18,7 +19,7 @@ import org.hibernate.Transaction;
 
 @ManagedBean(eager = true)
 @ApplicationScoped
-public class HibernateDriver {
+public class HibernateDriver implements Serializable{
     
     private Session session ;
     private Transaction transaction ;

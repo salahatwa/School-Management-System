@@ -1,0 +1,776 @@
+17-02-17 16:31:46[main][INFO]:Hibernate Commons Annotations 3.2.0.Final
+17-02-17 16:31:46[main][INFO]:Hibernate 3.6.3.Final
+17-02-17 16:31:47[main][INFO]:hibernate.properties not found
+17-02-17 16:31:47[main][INFO]:Bytecode provider name : javassist
+17-02-17 16:31:47[main][INFO]:using JDK 1.4 java.sql.Timestamp handling
+17-02-17 16:31:47[main][INFO]:configuring from resource: /hibernate.cfg.xml
+17-02-17 16:31:47[main][INFO]:Configuration resource: /hibernate.cfg.xml
+17-02-17 16:31:49[main][WARN]:recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+17-02-17 16:31:51[main][INFO]:Configured SessionFactory: null
+17-02-17 16:31:51[main][INFO]:Binding entity from annotated class: com.school.db.user.Stuff
+17-02-17 16:31:51[main][INFO]:Bind entity com.school.db.user.Stuff on table Users
+17-02-17 16:31:52[main][INFO]:Binding entity from annotated class: com.school.db.user.PersonalInfo
+17-02-17 16:31:52[main][INFO]:Bind entity com.school.db.user.PersonalInfo on table PERSONAL_INFO
+17-02-17 16:31:52[main][INFO]:Binding entity from annotated class: com.school.db.user.Nationality
+17-02-17 16:31:52[main][INFO]:Bind entity com.school.db.user.Nationality on table NATIONALITIES
+17-02-17 16:31:52[main][INFO]:Binding entity from annotated class: com.school.db.user.StudentNotes
+17-02-17 16:31:52[main][INFO]:Bind entity com.school.db.user.StudentNotes on table STUDENT_NOTES
+17-02-17 16:31:52[main][INFO]:Binding entity from annotated class: com.school.db.user.FamilyInformation
+17-02-17 16:31:52[main][INFO]:Bind entity com.school.db.user.FamilyInformation on table FAMILY_INFO
+17-02-17 16:31:52[main][INFO]:Binding entity from annotated class: com.school.db.user.Student
+17-02-17 16:31:52[main][INFO]:Binding entity from annotated class: com.school.db.user.Teacher
+17-02-17 16:31:52[main][INFO]:Binding entity from annotated class: com.school.db.country.Country
+17-02-17 16:31:52[main][INFO]:Bind entity com.school.db.country.Country on table COUNTRIES
+17-02-17 16:31:52[main][INFO]:Binding entity from annotated class: com.school.db.country.State
+17-02-17 16:31:52[main][INFO]:Bind entity com.school.db.country.State on table STATES
+17-02-17 16:31:52[main][INFO]:Binding entity from annotated class: com.school.db.school.Classes
+17-02-17 16:31:52[main][INFO]:Bind entity com.school.db.school.Classes on table CLASSES
+17-02-17 16:31:52[main][INFO]:Binding entity from annotated class: com.school.db.school.Stage
+17-02-17 16:31:52[main][INFO]:Bind entity com.school.db.school.Stage on table STAGE
+17-02-17 16:31:52[main][INFO]:Binding entity from annotated class: com.school.db.school.RowsOFStage
+17-02-17 16:31:52[main][INFO]:Bind entity com.school.db.school.RowsOFStage on table Rows_OF_Stage
+17-02-17 16:31:52[main][INFO]:Binding entity from annotated class: com.school.db.school.Subject
+17-02-17 16:31:52[main][INFO]:Bind entity com.school.db.school.Subject on table SUBJECT
+17-02-17 16:31:52[main][INFO]:Binding entity from annotated class: com.school.db.exam.Question_Choise
+17-02-17 16:31:52[main][INFO]:Bind entity com.school.db.exam.Question_Choise on table question_choises
+17-02-17 16:31:52[main][INFO]:Binding entity from annotated class: com.school.db.exam.Answers
+17-02-17 16:31:52[main][INFO]:Bind entity com.school.db.exam.Answers on table answers
+17-02-17 16:31:52[main][INFO]:Binding entity from annotated class: com.school.db.exam.Exam
+17-02-17 16:31:52[main][INFO]:Bind entity com.school.db.exam.Exam on table exams
+17-02-17 16:31:52[main][INFO]:Binding entity from annotated class: com.school.db.exam.ExamType
+17-02-17 16:31:52[main][INFO]:Bind entity com.school.db.exam.ExamType on table exam_type
+17-02-17 16:31:52[main][INFO]:Binding entity from annotated class: com.school.db.exam.Question
+17-02-17 16:31:52[main][INFO]:Bind entity com.school.db.exam.Question on table questions
+17-02-17 16:31:52[main][INFO]:Mapping collection: com.school.db.exam.Question.questionChoises -> question_choises
+17-02-17 16:31:52[main][INFO]:Mapping collection: com.school.db.exam.Exam.questions -> questions
+17-02-17 16:31:52[main][INFO]:Mapping collection: com.school.db.school.Subject.exams -> exams
+17-02-17 16:31:52[main][INFO]:Mapping collection: com.school.db.school.Stage.stageRowses -> Rows_OF_Stage
+17-02-17 16:31:52[main][INFO]:Mapping collection: com.school.db.country.Country.cities -> STATES
+17-02-17 16:31:52[main][INFO]:Mapping collection: com.school.db.user.Teacher.noteses -> STUDENT_NOTES
+17-02-17 16:31:52[main][INFO]:Mapping collection: com.school.db.user.Teacher.exams -> exams
+17-02-17 16:31:52[main][INFO]:Mapping collection: com.school.db.user.Student.notes -> STUDENT_NOTES
+17-02-17 16:31:52[main][INFO]:Mapping collection: com.school.db.user.Student.answerses -> answers
+17-02-17 16:31:52[main][INFO]:Mapping collection: com.school.db.user.Stuff.nationalities -> NATIONALITIES
+17-02-17 16:31:52[main][INFO]:Hibernate Validator not found: ignoring
+17-02-17 16:31:52[main][INFO]:Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+17-02-17 16:31:52[main][INFO]:Using Hibernate built-in connection pool (not for production use!)
+17-02-17 16:31:52[main][INFO]:Hibernate connection pool size: 20
+17-02-17 16:31:52[main][INFO]:autocommit mode: false
+17-02-17 16:31:55[main][INFO]:using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@127.0.0.1:1521/orcl
+17-02-17 16:31:55[main][INFO]:connection properties: {user=school, password=****, autocommit=false}
+17-02-17 16:32:16[main][INFO]:Using dialect: org.hibernate.dialect.Oracle10gDialect
+17-02-17 16:32:17[main][INFO]:Database ->
+       name : Oracle
+    version : Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+      major : 11
+      minor : 2
+17-02-17 16:32:17[main][INFO]:Driver ->
+       name : Oracle JDBC driver
+    version : 11.2.0.1.0
+      major : 11
+      minor : 2
+17-02-17 16:32:17[main][INFO]:Using default transaction strategy (direct JDBC transactions)
+17-02-17 16:32:17[main][INFO]:No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+17-02-17 16:32:17[main][INFO]:Automatic flush during beforeCompletion(): disabled
+17-02-17 16:32:17[main][INFO]:Automatic session close at end of transaction: disabled
+17-02-17 16:32:17[main][INFO]:JDBC batch size: 15
+17-02-17 16:32:17[main][INFO]:JDBC batch updates for versioned data: disabled
+17-02-17 16:32:17[main][INFO]:Scrollable result sets: enabled
+17-02-17 16:32:17[main][INFO]:JDBC3 getGeneratedKeys(): disabled
+17-02-17 16:32:17[main][INFO]:Connection release mode: auto
+17-02-17 16:32:17[main][INFO]:Default batch fetch size: 1
+17-02-17 16:32:17[main][INFO]:Generate SQL with comments: disabled
+17-02-17 16:32:17[main][INFO]:Order SQL updates by primary key: disabled
+17-02-17 16:32:17[main][INFO]:Order SQL inserts for batching: disabled
+17-02-17 16:32:17[main][INFO]:Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+17-02-17 16:32:17[main][INFO]:Using ASTQueryTranslatorFactory
+17-02-17 16:32:17[main][INFO]:Query language substitutions: {}
+17-02-17 16:32:17[main][INFO]:JPA-QL strict compliance: disabled
+17-02-17 16:32:17[main][INFO]:Second-level cache: enabled
+17-02-17 16:32:17[main][INFO]:Query cache: disabled
+17-02-17 16:32:17[main][INFO]:Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+17-02-17 16:32:17[main][INFO]:Optimize cache for minimal puts: disabled
+17-02-17 16:32:17[main][INFO]:Structured second-level cache entries: disabled
+17-02-17 16:32:17[main][INFO]:Statistics: disabled
+17-02-17 16:32:17[main][INFO]:Deleted entity synthetic identifier rollback: disabled
+17-02-17 16:32:17[main][INFO]:Default entity-mode: pojo
+17-02-17 16:32:17[main][INFO]:Named query checking : enabled
+17-02-17 16:32:17[main][INFO]:Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+17-02-17 16:32:17[main][INFO]:building session factory
+17-02-17 16:32:17[main][INFO]:Type registration [clob] overrides previous : org.hibernate.type.ClobType@2e1d27ba
+17-02-17 16:32:17[main][INFO]:Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@2e1d27ba
+17-02-17 16:32:17[main][INFO]:Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@61d6015a
+17-02-17 16:32:17[main][INFO]:Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@2525ff7e
+17-02-17 16:32:17[main][INFO]:Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@524d6d96
+17-02-17 16:32:17[main][INFO]:Type registration [blob] overrides previous : org.hibernate.type.BlobType@152aa092
+17-02-17 16:32:17[main][INFO]:Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@152aa092
+17-02-17 16:32:17[main][INFO]:Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@44a7bfbc
+17-02-17 16:32:17[main][INFO]:Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@4ef37659
+17-02-17 16:32:18[main][INFO]:Not binding factory to JNDI, no JNDI name configured
+17-02-17 16:32:18[main][INFO]:Running hbm2ddl schema update
+17-02-17 16:32:18[main][INFO]:fetching database metadata
+17-02-17 16:32:19[main][INFO]:updating schema
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.CLASSES
+17-02-17 16:32:20[main][INFO]:columns: [id, class_name, class_num]
+17-02-17 16:32:20[main][INFO]:foreign keys: []
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011887]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.COUNTRIES
+17-02-17 16:32:20[main][INFO]:columns: [country_name, id]
+17-02-17 16:32:20[main][INFO]:foreign keys: []
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011889]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.FAMILY_INFO
+17-02-17 16:32:20[main][INFO]:columns: [father_phone, father_address, father_job, father_name, father_email, id]
+17-02-17 16:32:20[main][INFO]:foreign keys: []
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011891]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.NATIONALITIES
+17-02-17 16:32:20[main][INFO]:columns: [nationality, user_id, id]
+17-02-17 16:32:20[main][INFO]:foreign keys: [fk800e273ad62a58c3]
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011894]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.PERSONAL_INFO
+17-02-17 16:32:20[main][INFO]:columns: [fname, lname, password, address, gender, phone, birth_date, id, email, country_id, religion]
+17-02-17 16:32:20[main][INFO]:foreign keys: [fkde20e74d2301949f]
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011902]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.ROWS_OF_STAGE
+17-02-17 16:32:20[main][INFO]:columns: [stage_id, row_name, id]
+17-02-17 16:32:20[main][INFO]:foreign keys: [fke10625fc2572de3]
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011904]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.STAGE
+17-02-17 16:32:20[main][INFO]:columns: [stage_name, id, stage_year]
+17-02-17 16:32:20[main][INFO]:foreign keys: []
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011908]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.STATES
+17-02-17 16:32:20[main][INFO]:columns: [city_name, id, country_id]
+17-02-17 16:32:20[main][INFO]:foreign keys: [fk9260c2022301949f]
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011911]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.STUDENT_NOTES
+17-02-17 16:32:20[main][INFO]:columns: [note_type, teacher_id, student_id, id, note_text]
+17-02-17 16:32:20[main][INFO]:foreign keys: [fkcd5c877da335309a, fkcd5c877db3d07b3a]
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011913]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.SUBJECT
+17-02-17 16:32:20[main][INFO]:columns: [minimum_degree, stage_id, subject_name, id, maximum_degree]
+17-02-17 16:32:20[main][INFO]:foreign keys: [fkbb75e10c2572de3]
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011916]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.USERS
+17-02-17 16:32:20[main][INFO]:columns: [user_type, join_date, stage_id, class_id, personal_info_id, id, family_info_id]
+17-02-17 16:32:20[main][INFO]:foreign keys: [fk4e39de82572de3, fk4e39de8d2a1bc59, fk4e39de8bf31dd9b, fk4e39de853cadc11]
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011921]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.ANSWERS
+17-02-17 16:32:20[main][INFO]:columns: [student_id, id, choise_id, question_id]
+17-02-17 16:32:20[main][INFO]:foreign keys: [fkcd7db875a335309a, fkcd7db875c1d0abc7, fkcd7db875e0875d66]
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011926]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.EXAM_TYPE
+17-02-17 16:32:20[main][INFO]:columns: [type_name, id]
+17-02-17 16:32:20[main][INFO]:foreign keys: []
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011928]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.EXAMS
+17-02-17 16:32:20[main][INFO]:columns: [exam_type, subject_id, teacher_id, id, exam_date]
+17-02-17 16:32:20[main][INFO]:foreign keys: [fk5c74c34661d40e3, fk5c74c345b369cbf, fk5c74c34b3d07b3a]
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011932]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.QUESTION_CHOISES
+17-02-17 16:32:20[main][INFO]:columns: [choise_number, id, question_id, answer_choise, is_true]
+17-02-17 16:32:20[main][INFO]:foreign keys: [fkccf12fa9e0875d66]
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011935]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.QUESTIONS
+17-02-17 16:32:20[main][INFO]:columns: [id, question_title, question_number, exam_id]
+17-02-17 16:32:20[main][INFO]:foreign keys: [fk95c5414da78f5cc6]
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011938]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.STUDENT_SUBJECT
+17-02-17 16:32:20[main][INFO]:columns: [subject_id, student_id]
+17-02-17 16:32:20[main][INFO]:foreign keys: [fkbb5c1328a335309a, fkbb5c1328661d40e3]
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011941]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.TEACHERS_CLASSES
+17-02-17 16:32:20[main][INFO]:columns: [teacher_id, class_id]
+17-02-17 16:32:20[main][INFO]:foreign keys: [fk7ca72eb8b3d07b3a, fk7ca72eb853cadc11]
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011944]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.TEACHERS_STAGES
+17-02-17 16:32:20[main][INFO]:columns: [teacher_id, stage_id]
+17-02-17 16:32:20[main][INFO]:foreign keys: [fk28058c632572de3, fk28058c63b3d07b3a]
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011947]
+17-02-17 16:32:20[main][INFO]:table found: SCHOOL.TEACHERS_SUBJECTS
+17-02-17 16:32:20[main][INFO]:columns: [subject_id, teacher_id]
+17-02-17 16:32:20[main][INFO]:foreign keys: [fk73992c75b3d07b3a, fk73992c75661d40e3]
+17-02-17 16:32:20[main][INFO]:indexes: [sys_c0011950]
+17-02-17 16:32:20[main][INFO]:schema update complete
+17-02-17 16:33:41[main][INFO]:Hibernate Commons Annotations 3.2.0.Final
+17-02-17 16:33:41[main][INFO]:Hibernate 3.6.3.Final
+17-02-17 16:33:41[main][INFO]:hibernate.properties not found
+17-02-17 16:33:41[main][INFO]:Bytecode provider name : javassist
+17-02-17 16:33:41[main][INFO]:using JDK 1.4 java.sql.Timestamp handling
+17-02-17 16:33:41[main][INFO]:configuring from resource: /hibernate.cfg.xml
+17-02-17 16:33:41[main][INFO]:Configuration resource: /hibernate.cfg.xml
+17-02-17 16:33:41[main][WARN]:recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+17-02-17 16:33:42[main][INFO]:Configured SessionFactory: null
+17-02-17 16:33:42[main][INFO]:Binding entity from annotated class: com.school.db.user.Stuff
+17-02-17 16:33:42[main][INFO]:Bind entity com.school.db.user.Stuff on table Users
+17-02-17 16:33:42[main][INFO]:Binding entity from annotated class: com.school.db.user.PersonalInfo
+17-02-17 16:33:42[main][INFO]:Bind entity com.school.db.user.PersonalInfo on table PERSONAL_INFO
+17-02-17 16:33:42[main][INFO]:Binding entity from annotated class: com.school.db.user.Nationality
+17-02-17 16:33:42[main][INFO]:Bind entity com.school.db.user.Nationality on table NATIONALITIES
+17-02-17 16:33:42[main][INFO]:Binding entity from annotated class: com.school.db.user.StudentNotes
+17-02-17 16:33:42[main][INFO]:Bind entity com.school.db.user.StudentNotes on table STUDENT_NOTES
+17-02-17 16:33:42[main][INFO]:Binding entity from annotated class: com.school.db.user.FamilyInformation
+17-02-17 16:33:42[main][INFO]:Bind entity com.school.db.user.FamilyInformation on table FAMILY_INFO
+17-02-17 16:33:42[main][INFO]:Binding entity from annotated class: com.school.db.user.Student
+17-02-17 16:33:42[main][INFO]:Binding entity from annotated class: com.school.db.user.Teacher
+17-02-17 16:33:42[main][INFO]:Binding entity from annotated class: com.school.db.country.Country
+17-02-17 16:33:42[main][INFO]:Bind entity com.school.db.country.Country on table COUNTRIES
+17-02-17 16:33:42[main][INFO]:Binding entity from annotated class: com.school.db.country.State
+17-02-17 16:33:42[main][INFO]:Bind entity com.school.db.country.State on table STATES
+17-02-17 16:33:42[main][INFO]:Binding entity from annotated class: com.school.db.school.Classes
+17-02-17 16:33:42[main][INFO]:Bind entity com.school.db.school.Classes on table CLASSES
+17-02-17 16:33:42[main][INFO]:Binding entity from annotated class: com.school.db.school.Stage
+17-02-17 16:33:42[main][INFO]:Bind entity com.school.db.school.Stage on table STAGE
+17-02-17 16:33:42[main][INFO]:Binding entity from annotated class: com.school.db.school.RowsOFStage
+17-02-17 16:33:42[main][INFO]:Bind entity com.school.db.school.RowsOFStage on table Rows_OF_Stage
+17-02-17 16:33:42[main][INFO]:Binding entity from annotated class: com.school.db.school.Subject
+17-02-17 16:33:42[main][INFO]:Bind entity com.school.db.school.Subject on table SUBJECT
+17-02-17 16:33:42[main][INFO]:Binding entity from annotated class: com.school.db.exam.Question_Choise
+17-02-17 16:33:42[main][INFO]:Bind entity com.school.db.exam.Question_Choise on table question_choises
+17-02-17 16:33:42[main][INFO]:Binding entity from annotated class: com.school.db.exam.Answers
+17-02-17 16:33:42[main][INFO]:Bind entity com.school.db.exam.Answers on table answers
+17-02-17 16:33:42[main][INFO]:Binding entity from annotated class: com.school.db.exam.Exam
+17-02-17 16:33:42[main][INFO]:Bind entity com.school.db.exam.Exam on table exams
+17-02-17 16:33:42[main][INFO]:Binding entity from annotated class: com.school.db.exam.ExamType
+17-02-17 16:33:42[main][INFO]:Bind entity com.school.db.exam.ExamType on table exam_type
+17-02-17 16:33:42[main][INFO]:Binding entity from annotated class: com.school.db.exam.Question
+17-02-17 16:33:42[main][INFO]:Bind entity com.school.db.exam.Question on table questions
+17-02-17 16:33:42[main][INFO]:Mapping collection: com.school.db.exam.Question.questionChoises -> question_choises
+17-02-17 16:33:42[main][INFO]:Mapping collection: com.school.db.exam.Exam.questions -> questions
+17-02-17 16:33:42[main][INFO]:Mapping collection: com.school.db.school.Subject.exams -> exams
+17-02-17 16:33:42[main][INFO]:Mapping collection: com.school.db.school.Stage.stageRowses -> Rows_OF_Stage
+17-02-17 16:33:42[main][INFO]:Mapping collection: com.school.db.country.Country.cities -> STATES
+17-02-17 16:33:42[main][INFO]:Mapping collection: com.school.db.user.Teacher.noteses -> STUDENT_NOTES
+17-02-17 16:33:42[main][INFO]:Mapping collection: com.school.db.user.Teacher.exams -> exams
+17-02-17 16:33:42[main][INFO]:Mapping collection: com.school.db.user.Student.notes -> STUDENT_NOTES
+17-02-17 16:33:42[main][INFO]:Mapping collection: com.school.db.user.Student.answerses -> answers
+17-02-17 16:33:42[main][INFO]:Mapping collection: com.school.db.user.Stuff.nationalities -> NATIONALITIES
+17-02-17 16:33:42[main][INFO]:Hibernate Validator not found: ignoring
+17-02-17 16:33:42[main][INFO]:Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+17-02-17 16:33:42[main][INFO]:Using Hibernate built-in connection pool (not for production use!)
+17-02-17 16:33:42[main][INFO]:Hibernate connection pool size: 20
+17-02-17 16:33:42[main][INFO]:autocommit mode: false
+17-02-17 16:33:43[main][INFO]:using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@127.0.0.1:1521/orcl
+17-02-17 16:33:43[main][INFO]:connection properties: {user=school, password=****, autocommit=false}
+17-02-17 16:33:45[main][INFO]:Using dialect: org.hibernate.dialect.Oracle10gDialect
+17-02-17 16:33:45[main][INFO]:Database ->
+       name : Oracle
+    version : Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+      major : 11
+      minor : 2
+17-02-17 16:33:45[main][INFO]:Driver ->
+       name : Oracle JDBC driver
+    version : 11.2.0.1.0
+      major : 11
+      minor : 2
+17-02-17 16:33:45[main][INFO]:Using default transaction strategy (direct JDBC transactions)
+17-02-17 16:33:45[main][INFO]:No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+17-02-17 16:33:45[main][INFO]:Automatic flush during beforeCompletion(): disabled
+17-02-17 16:33:45[main][INFO]:Automatic session close at end of transaction: disabled
+17-02-17 16:33:45[main][INFO]:JDBC batch size: 15
+17-02-17 16:33:45[main][INFO]:JDBC batch updates for versioned data: disabled
+17-02-17 16:33:45[main][INFO]:Scrollable result sets: enabled
+17-02-17 16:33:45[main][INFO]:JDBC3 getGeneratedKeys(): disabled
+17-02-17 16:33:45[main][INFO]:Connection release mode: auto
+17-02-17 16:33:45[main][INFO]:Default batch fetch size: 1
+17-02-17 16:33:45[main][INFO]:Generate SQL with comments: disabled
+17-02-17 16:33:45[main][INFO]:Order SQL updates by primary key: disabled
+17-02-17 16:33:45[main][INFO]:Order SQL inserts for batching: disabled
+17-02-17 16:33:45[main][INFO]:Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+17-02-17 16:33:45[main][INFO]:Using ASTQueryTranslatorFactory
+17-02-17 16:33:45[main][INFO]:Query language substitutions: {}
+17-02-17 16:33:45[main][INFO]:JPA-QL strict compliance: disabled
+17-02-17 16:33:45[main][INFO]:Second-level cache: enabled
+17-02-17 16:33:45[main][INFO]:Query cache: disabled
+17-02-17 16:33:45[main][INFO]:Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+17-02-17 16:33:45[main][INFO]:Optimize cache for minimal puts: disabled
+17-02-17 16:33:45[main][INFO]:Structured second-level cache entries: disabled
+17-02-17 16:33:45[main][INFO]:Statistics: disabled
+17-02-17 16:33:45[main][INFO]:Deleted entity synthetic identifier rollback: disabled
+17-02-17 16:33:45[main][INFO]:Default entity-mode: pojo
+17-02-17 16:33:45[main][INFO]:Named query checking : enabled
+17-02-17 16:33:45[main][INFO]:Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+17-02-17 16:33:45[main][INFO]:building session factory
+17-02-17 16:33:45[main][INFO]:Type registration [clob] overrides previous : org.hibernate.type.ClobType@2e1d27ba
+17-02-17 16:33:45[main][INFO]:Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@2e1d27ba
+17-02-17 16:33:45[main][INFO]:Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@61d6015a
+17-02-17 16:33:45[main][INFO]:Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@2525ff7e
+17-02-17 16:33:45[main][INFO]:Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@524d6d96
+17-02-17 16:33:45[main][INFO]:Type registration [blob] overrides previous : org.hibernate.type.BlobType@152aa092
+17-02-17 16:33:45[main][INFO]:Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@152aa092
+17-02-17 16:33:45[main][INFO]:Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@44a7bfbc
+17-02-17 16:33:45[main][INFO]:Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@4ef37659
+17-02-17 16:33:46[main][INFO]:Not binding factory to JNDI, no JNDI name configured
+17-02-17 16:33:46[main][INFO]:Running hbm2ddl schema update
+17-02-17 16:33:46[main][INFO]:fetching database metadata
+17-02-17 16:33:47[main][INFO]:updating schema
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.CLASSES
+17-02-17 16:33:48[main][INFO]:columns: [id, class_name, class_num]
+17-02-17 16:33:48[main][INFO]:foreign keys: []
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011887]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.COUNTRIES
+17-02-17 16:33:48[main][INFO]:columns: [country_name, id]
+17-02-17 16:33:48[main][INFO]:foreign keys: []
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011889]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.FAMILY_INFO
+17-02-17 16:33:48[main][INFO]:columns: [father_phone, father_address, father_job, father_name, father_email, id]
+17-02-17 16:33:48[main][INFO]:foreign keys: []
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011891]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.NATIONALITIES
+17-02-17 16:33:48[main][INFO]:columns: [nationality, user_id, id]
+17-02-17 16:33:48[main][INFO]:foreign keys: [fk800e273ad62a58c3]
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011894]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.PERSONAL_INFO
+17-02-17 16:33:48[main][INFO]:columns: [fname, lname, password, address, gender, phone, birth_date, id, email, country_id, religion]
+17-02-17 16:33:48[main][INFO]:foreign keys: [fkde20e74d2301949f]
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011902]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.ROWS_OF_STAGE
+17-02-17 16:33:48[main][INFO]:columns: [stage_id, row_name, id]
+17-02-17 16:33:48[main][INFO]:foreign keys: [fke10625fc2572de3]
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011904]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.STAGE
+17-02-17 16:33:48[main][INFO]:columns: [stage_name, id, stage_year]
+17-02-17 16:33:48[main][INFO]:foreign keys: []
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011908]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.STATES
+17-02-17 16:33:48[main][INFO]:columns: [city_name, id, country_id]
+17-02-17 16:33:48[main][INFO]:foreign keys: [fk9260c2022301949f]
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011911]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.STUDENT_NOTES
+17-02-17 16:33:48[main][INFO]:columns: [note_type, teacher_id, student_id, id, note_text]
+17-02-17 16:33:48[main][INFO]:foreign keys: [fkcd5c877da335309a, fkcd5c877db3d07b3a]
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011913]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.SUBJECT
+17-02-17 16:33:48[main][INFO]:columns: [minimum_degree, stage_id, subject_name, id, maximum_degree]
+17-02-17 16:33:48[main][INFO]:foreign keys: [fkbb75e10c2572de3]
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011916]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.USERS
+17-02-17 16:33:48[main][INFO]:columns: [user_type, join_date, stage_id, class_id, personal_info_id, id, family_info_id]
+17-02-17 16:33:48[main][INFO]:foreign keys: [fk4e39de82572de3, fk4e39de8d2a1bc59, fk4e39de8bf31dd9b, fk4e39de853cadc11]
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011921]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.ANSWERS
+17-02-17 16:33:48[main][INFO]:columns: [student_id, id, choise_id, question_id]
+17-02-17 16:33:48[main][INFO]:foreign keys: [fkcd7db875a335309a, fkcd7db875c1d0abc7, fkcd7db875e0875d66]
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011926]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.EXAM_TYPE
+17-02-17 16:33:48[main][INFO]:columns: [type_name, id]
+17-02-17 16:33:48[main][INFO]:foreign keys: []
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011928]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.EXAMS
+17-02-17 16:33:48[main][INFO]:columns: [exam_type, subject_id, teacher_id, id, exam_date]
+17-02-17 16:33:48[main][INFO]:foreign keys: [fk5c74c34661d40e3, fk5c74c345b369cbf, fk5c74c34b3d07b3a]
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011932]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.QUESTION_CHOISES
+17-02-17 16:33:48[main][INFO]:columns: [choise_number, id, question_id, answer_choise, is_true]
+17-02-17 16:33:48[main][INFO]:foreign keys: [fkccf12fa9e0875d66]
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011935]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.QUESTIONS
+17-02-17 16:33:48[main][INFO]:columns: [id, question_title, question_number, exam_id]
+17-02-17 16:33:48[main][INFO]:foreign keys: [fk95c5414da78f5cc6]
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011938]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.STUDENT_SUBJECT
+17-02-17 16:33:48[main][INFO]:columns: [subject_id, student_id]
+17-02-17 16:33:48[main][INFO]:foreign keys: [fkbb5c1328a335309a, fkbb5c1328661d40e3]
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011941]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.TEACHERS_CLASSES
+17-02-17 16:33:48[main][INFO]:columns: [teacher_id, class_id]
+17-02-17 16:33:48[main][INFO]:foreign keys: [fk7ca72eb8b3d07b3a, fk7ca72eb853cadc11]
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011944]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.TEACHERS_STAGES
+17-02-17 16:33:48[main][INFO]:columns: [teacher_id, stage_id]
+17-02-17 16:33:48[main][INFO]:foreign keys: [fk28058c632572de3, fk28058c63b3d07b3a]
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011947]
+17-02-17 16:33:48[main][INFO]:table found: SCHOOL.TEACHERS_SUBJECTS
+17-02-17 16:33:48[main][INFO]:columns: [subject_id, teacher_id]
+17-02-17 16:33:48[main][INFO]:foreign keys: [fk73992c75b3d07b3a, fk73992c75661d40e3]
+17-02-17 16:33:48[main][INFO]:indexes: [sys_c0011950]
+17-02-17 16:33:48[main][INFO]:schema update complete
+17-02-17 16:34:16[main][INFO]:Hibernate Commons Annotations 3.2.0.Final
+17-02-17 16:34:16[main][INFO]:Hibernate 3.6.3.Final
+17-02-17 16:34:16[main][INFO]:hibernate.properties not found
+17-02-17 16:34:16[main][INFO]:Bytecode provider name : javassist
+17-02-17 16:34:16[main][INFO]:using JDK 1.4 java.sql.Timestamp handling
+17-02-17 16:34:16[main][INFO]:configuring from resource: /hibernate.cfg.xml
+17-02-17 16:34:16[main][INFO]:Configuration resource: /hibernate.cfg.xml
+17-02-17 16:34:16[main][WARN]:recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+17-02-17 16:34:17[main][INFO]:Configured SessionFactory: null
+17-02-17 16:34:17[main][INFO]:Binding entity from annotated class: com.school.db.user.Stuff
+17-02-17 16:34:17[main][INFO]:Bind entity com.school.db.user.Stuff on table Users
+17-02-17 16:34:17[main][INFO]:Binding entity from annotated class: com.school.db.user.PersonalInfo
+17-02-17 16:34:17[main][INFO]:Bind entity com.school.db.user.PersonalInfo on table PERSONAL_INFO
+17-02-17 16:34:17[main][INFO]:Binding entity from annotated class: com.school.db.user.Nationality
+17-02-17 16:34:17[main][INFO]:Bind entity com.school.db.user.Nationality on table NATIONALITIES
+17-02-17 16:34:17[main][INFO]:Binding entity from annotated class: com.school.db.user.StudentNotes
+17-02-17 16:34:17[main][INFO]:Bind entity com.school.db.user.StudentNotes on table STUDENT_NOTES
+17-02-17 16:34:17[main][INFO]:Binding entity from annotated class: com.school.db.user.FamilyInformation
+17-02-17 16:34:17[main][INFO]:Bind entity com.school.db.user.FamilyInformation on table FAMILY_INFO
+17-02-17 16:34:17[main][INFO]:Binding entity from annotated class: com.school.db.user.Student
+17-02-17 16:34:17[main][INFO]:Binding entity from annotated class: com.school.db.user.Teacher
+17-02-17 16:34:17[main][INFO]:Binding entity from annotated class: com.school.db.country.Country
+17-02-17 16:34:17[main][INFO]:Bind entity com.school.db.country.Country on table COUNTRIES
+17-02-17 16:34:17[main][INFO]:Binding entity from annotated class: com.school.db.country.State
+17-02-17 16:34:17[main][INFO]:Bind entity com.school.db.country.State on table STATES
+17-02-17 16:34:17[main][INFO]:Binding entity from annotated class: com.school.db.school.Classes
+17-02-17 16:34:17[main][INFO]:Bind entity com.school.db.school.Classes on table CLASSES
+17-02-17 16:34:17[main][INFO]:Binding entity from annotated class: com.school.db.school.Stage
+17-02-17 16:34:17[main][INFO]:Bind entity com.school.db.school.Stage on table STAGE
+17-02-17 16:34:17[main][INFO]:Binding entity from annotated class: com.school.db.school.RowsOFStage
+17-02-17 16:34:17[main][INFO]:Bind entity com.school.db.school.RowsOFStage on table Rows_OF_Stage
+17-02-17 16:34:17[main][INFO]:Binding entity from annotated class: com.school.db.school.Subject
+17-02-17 16:34:17[main][INFO]:Bind entity com.school.db.school.Subject on table SUBJECT
+17-02-17 16:34:17[main][INFO]:Binding entity from annotated class: com.school.db.exam.Question_Choise
+17-02-17 16:34:17[main][INFO]:Bind entity com.school.db.exam.Question_Choise on table question_choises
+17-02-17 16:34:17[main][INFO]:Binding entity from annotated class: com.school.db.exam.Answers
+17-02-17 16:34:17[main][INFO]:Bind entity com.school.db.exam.Answers on table answers
+17-02-17 16:34:17[main][INFO]:Binding entity from annotated class: com.school.db.exam.Exam
+17-02-17 16:34:17[main][INFO]:Bind entity com.school.db.exam.Exam on table exams
+17-02-17 16:34:17[main][INFO]:Binding entity from annotated class: com.school.db.exam.ExamType
+17-02-17 16:34:17[main][INFO]:Bind entity com.school.db.exam.ExamType on table exam_type
+17-02-17 16:34:17[main][INFO]:Binding entity from annotated class: com.school.db.exam.Question
+17-02-17 16:34:17[main][INFO]:Bind entity com.school.db.exam.Question on table questions
+17-02-17 16:34:17[main][INFO]:Mapping collection: com.school.db.exam.Question.questionChoises -> question_choises
+17-02-17 16:34:17[main][INFO]:Mapping collection: com.school.db.exam.Exam.questions -> questions
+17-02-17 16:34:17[main][INFO]:Mapping collection: com.school.db.school.Subject.exams -> exams
+17-02-17 16:34:17[main][INFO]:Mapping collection: com.school.db.school.Stage.stageRowses -> Rows_OF_Stage
+17-02-17 16:34:17[main][INFO]:Mapping collection: com.school.db.country.Country.cities -> STATES
+17-02-17 16:34:17[main][INFO]:Mapping collection: com.school.db.user.Teacher.noteses -> STUDENT_NOTES
+17-02-17 16:34:17[main][INFO]:Mapping collection: com.school.db.user.Teacher.exams -> exams
+17-02-17 16:34:17[main][INFO]:Mapping collection: com.school.db.user.Student.notes -> STUDENT_NOTES
+17-02-17 16:34:17[main][INFO]:Mapping collection: com.school.db.user.Student.answerses -> answers
+17-02-17 16:34:17[main][INFO]:Mapping collection: com.school.db.user.Stuff.nationalities -> NATIONALITIES
+17-02-17 16:34:17[main][INFO]:Hibernate Validator not found: ignoring
+17-02-17 16:34:17[main][INFO]:Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+17-02-17 16:34:17[main][INFO]:Using Hibernate built-in connection pool (not for production use!)
+17-02-17 16:34:17[main][INFO]:Hibernate connection pool size: 20
+17-02-17 16:34:17[main][INFO]:autocommit mode: false
+17-02-17 16:34:18[main][INFO]:using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@127.0.0.1:1521/orcl
+17-02-17 16:34:18[main][INFO]:connection properties: {user=school, password=****, autocommit=false}
+17-02-17 16:34:19[main][INFO]:Using dialect: org.hibernate.dialect.Oracle10gDialect
+17-02-17 16:34:19[main][INFO]:Database ->
+       name : Oracle
+    version : Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+      major : 11
+      minor : 2
+17-02-17 16:34:19[main][INFO]:Driver ->
+       name : Oracle JDBC driver
+    version : 11.2.0.1.0
+      major : 11
+      minor : 2
+17-02-17 16:34:19[main][INFO]:Using default transaction strategy (direct JDBC transactions)
+17-02-17 16:34:19[main][INFO]:No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+17-02-17 16:34:19[main][INFO]:Automatic flush during beforeCompletion(): disabled
+17-02-17 16:34:19[main][INFO]:Automatic session close at end of transaction: disabled
+17-02-17 16:34:19[main][INFO]:JDBC batch size: 15
+17-02-17 16:34:19[main][INFO]:JDBC batch updates for versioned data: disabled
+17-02-17 16:34:19[main][INFO]:Scrollable result sets: enabled
+17-02-17 16:34:19[main][INFO]:JDBC3 getGeneratedKeys(): disabled
+17-02-17 16:34:19[main][INFO]:Connection release mode: auto
+17-02-17 16:34:19[main][INFO]:Default batch fetch size: 1
+17-02-17 16:34:19[main][INFO]:Generate SQL with comments: disabled
+17-02-17 16:34:19[main][INFO]:Order SQL updates by primary key: disabled
+17-02-17 16:34:19[main][INFO]:Order SQL inserts for batching: disabled
+17-02-17 16:34:19[main][INFO]:Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+17-02-17 16:34:19[main][INFO]:Using ASTQueryTranslatorFactory
+17-02-17 16:34:19[main][INFO]:Query language substitutions: {}
+17-02-17 16:34:19[main][INFO]:JPA-QL strict compliance: disabled
+17-02-17 16:34:19[main][INFO]:Second-level cache: enabled
+17-02-17 16:34:19[main][INFO]:Query cache: disabled
+17-02-17 16:34:19[main][INFO]:Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+17-02-17 16:34:19[main][INFO]:Optimize cache for minimal puts: disabled
+17-02-17 16:34:19[main][INFO]:Structured second-level cache entries: disabled
+17-02-17 16:34:19[main][INFO]:Statistics: disabled
+17-02-17 16:34:19[main][INFO]:Deleted entity synthetic identifier rollback: disabled
+17-02-17 16:34:19[main][INFO]:Default entity-mode: pojo
+17-02-17 16:34:19[main][INFO]:Named query checking : enabled
+17-02-17 16:34:19[main][INFO]:Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+17-02-17 16:34:19[main][INFO]:building session factory
+17-02-17 16:34:19[main][INFO]:Type registration [clob] overrides previous : org.hibernate.type.ClobType@2e1d27ba
+17-02-17 16:34:19[main][INFO]:Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@2e1d27ba
+17-02-17 16:34:19[main][INFO]:Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@61d6015a
+17-02-17 16:34:19[main][INFO]:Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@2525ff7e
+17-02-17 16:34:19[main][INFO]:Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@524d6d96
+17-02-17 16:34:19[main][INFO]:Type registration [blob] overrides previous : org.hibernate.type.BlobType@152aa092
+17-02-17 16:34:19[main][INFO]:Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@152aa092
+17-02-17 16:34:19[main][INFO]:Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@44a7bfbc
+17-02-17 16:34:19[main][INFO]:Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@4ef37659
+17-02-17 16:34:20[main][INFO]:Not binding factory to JNDI, no JNDI name configured
+17-02-17 16:34:20[main][INFO]:Running hbm2ddl schema update
+17-02-17 16:34:20[main][INFO]:fetching database metadata
+17-02-17 16:34:20[main][INFO]:updating schema
+17-02-17 16:34:20[main][INFO]:table found: SCHOOL.CLASSES
+17-02-17 16:34:20[main][INFO]:columns: [id, class_name, class_num]
+17-02-17 16:34:20[main][INFO]:foreign keys: []
+17-02-17 16:34:20[main][INFO]:indexes: [sys_c0011887]
+17-02-17 16:34:20[main][INFO]:table found: SCHOOL.COUNTRIES
+17-02-17 16:34:20[main][INFO]:columns: [country_name, id]
+17-02-17 16:34:20[main][INFO]:foreign keys: []
+17-02-17 16:34:20[main][INFO]:indexes: [sys_c0011889]
+17-02-17 16:34:20[main][INFO]:table found: SCHOOL.FAMILY_INFO
+17-02-17 16:34:20[main][INFO]:columns: [father_phone, father_address, father_job, father_name, father_email, id]
+17-02-17 16:34:20[main][INFO]:foreign keys: []
+17-02-17 16:34:20[main][INFO]:indexes: [sys_c0011891]
+17-02-17 16:34:20[main][INFO]:table found: SCHOOL.NATIONALITIES
+17-02-17 16:34:20[main][INFO]:columns: [nationality, user_id, id]
+17-02-17 16:34:20[main][INFO]:foreign keys: [fk800e273ad62a58c3]
+17-02-17 16:34:20[main][INFO]:indexes: [sys_c0011894]
+17-02-17 16:34:20[main][INFO]:table found: SCHOOL.PERSONAL_INFO
+17-02-17 16:34:20[main][INFO]:columns: [fname, lname, password, address, gender, phone, birth_date, id, email, country_id, religion]
+17-02-17 16:34:20[main][INFO]:foreign keys: [fkde20e74d2301949f]
+17-02-17 16:34:20[main][INFO]:indexes: [sys_c0011902]
+17-02-17 16:34:21[main][INFO]:table found: SCHOOL.ROWS_OF_STAGE
+17-02-17 16:34:21[main][INFO]:columns: [stage_id, row_name, id]
+17-02-17 16:34:21[main][INFO]:foreign keys: [fke10625fc2572de3]
+17-02-17 16:34:21[main][INFO]:indexes: [sys_c0011904]
+17-02-17 16:34:21[main][INFO]:table found: SCHOOL.STAGE
+17-02-17 16:34:21[main][INFO]:columns: [stage_name, id, stage_year]
+17-02-17 16:34:21[main][INFO]:foreign keys: []
+17-02-17 16:34:21[main][INFO]:indexes: [sys_c0011908]
+17-02-17 16:34:21[main][INFO]:table found: SCHOOL.STATES
+17-02-17 16:34:21[main][INFO]:columns: [city_name, id, country_id]
+17-02-17 16:34:21[main][INFO]:foreign keys: [fk9260c2022301949f]
+17-02-17 16:34:21[main][INFO]:indexes: [sys_c0011911]
+17-02-17 16:34:21[main][INFO]:table found: SCHOOL.STUDENT_NOTES
+17-02-17 16:34:21[main][INFO]:columns: [note_type, teacher_id, student_id, id, note_text]
+17-02-17 16:34:21[main][INFO]:foreign keys: [fkcd5c877da335309a, fkcd5c877db3d07b3a]
+17-02-17 16:34:21[main][INFO]:indexes: [sys_c0011913]
+17-02-17 16:34:21[main][INFO]:table found: SCHOOL.SUBJECT
+17-02-17 16:34:21[main][INFO]:columns: [minimum_degree, stage_id, subject_name, id, maximum_degree]
+17-02-17 16:34:21[main][INFO]:foreign keys: [fkbb75e10c2572de3]
+17-02-17 16:34:21[main][INFO]:indexes: [sys_c0011916]
+17-02-17 16:34:21[main][INFO]:table found: SCHOOL.USERS
+17-02-17 16:34:21[main][INFO]:columns: [user_type, join_date, stage_id, class_id, personal_info_id, id, family_info_id]
+17-02-17 16:34:21[main][INFO]:foreign keys: [fk4e39de82572de3, fk4e39de8d2a1bc59, fk4e39de8bf31dd9b, fk4e39de853cadc11]
+17-02-17 16:34:21[main][INFO]:indexes: [sys_c0011921]
+17-02-17 16:34:21[main][INFO]:table found: SCHOOL.ANSWERS
+17-02-17 16:34:21[main][INFO]:columns: [student_id, id, choise_id, question_id]
+17-02-17 16:34:21[main][INFO]:foreign keys: [fkcd7db875a335309a, fkcd7db875c1d0abc7, fkcd7db875e0875d66]
+17-02-17 16:34:21[main][INFO]:indexes: [sys_c0011926]
+17-02-17 16:34:21[main][INFO]:table found: SCHOOL.EXAM_TYPE
+17-02-17 16:34:21[main][INFO]:columns: [type_name, id]
+17-02-17 16:34:21[main][INFO]:foreign keys: []
+17-02-17 16:34:21[main][INFO]:indexes: [sys_c0011928]
+17-02-17 16:34:21[main][INFO]:table found: SCHOOL.EXAMS
+17-02-17 16:34:21[main][INFO]:columns: [exam_type, subject_id, teacher_id, id, exam_date]
+17-02-17 16:34:21[main][INFO]:foreign keys: [fk5c74c34661d40e3, fk5c74c345b369cbf, fk5c74c34b3d07b3a]
+17-02-17 16:34:21[main][INFO]:indexes: [sys_c0011932]
+17-02-17 16:34:21[main][INFO]:table found: SCHOOL.QUESTION_CHOISES
+17-02-17 16:34:21[main][INFO]:columns: [choise_number, id, question_id, answer_choise, is_true]
+17-02-17 16:34:21[main][INFO]:foreign keys: [fkccf12fa9e0875d66]
+17-02-17 16:34:21[main][INFO]:indexes: [sys_c0011935]
+17-02-17 16:34:21[main][INFO]:table found: SCHOOL.QUESTIONS
+17-02-17 16:34:21[main][INFO]:columns: [id, question_title, question_number, exam_id]
+17-02-17 16:34:21[main][INFO]:foreign keys: [fk95c5414da78f5cc6]
+17-02-17 16:34:21[main][INFO]:indexes: [sys_c0011938]
+17-02-17 16:34:21[main][INFO]:table found: SCHOOL.STUDENT_SUBJECT
+17-02-17 16:34:21[main][INFO]:columns: [subject_id, student_id]
+17-02-17 16:34:21[main][INFO]:foreign keys: [fkbb5c1328a335309a, fkbb5c1328661d40e3]
+17-02-17 16:34:21[main][INFO]:indexes: [sys_c0011941]
+17-02-17 16:34:21[main][INFO]:table found: SCHOOL.TEACHERS_CLASSES
+17-02-17 16:34:21[main][INFO]:columns: [teacher_id, class_id]
+17-02-17 16:34:21[main][INFO]:foreign keys: [fk7ca72eb8b3d07b3a, fk7ca72eb853cadc11]
+17-02-17 16:34:21[main][INFO]:indexes: [sys_c0011944]
+17-02-17 16:34:21[main][INFO]:table found: SCHOOL.TEACHERS_STAGES
+17-02-17 16:34:21[main][INFO]:columns: [teacher_id, stage_id]
+17-02-17 16:34:21[main][INFO]:foreign keys: [fk28058c632572de3, fk28058c63b3d07b3a]
+17-02-17 16:34:21[main][INFO]:indexes: [sys_c0011947]
+17-02-17 16:34:21[main][INFO]:table found: SCHOOL.TEACHERS_SUBJECTS
+17-02-17 16:34:21[main][INFO]:columns: [subject_id, teacher_id]
+17-02-17 16:34:21[main][INFO]:foreign keys: [fk73992c75b3d07b3a, fk73992c75661d40e3]
+17-02-17 16:34:21[main][INFO]:indexes: [sys_c0011950]
+17-02-17 16:34:21[main][INFO]:schema update complete
+17-02-17 21:56:08[main][INFO]:Hibernate Commons Annotations 3.2.0.Final
+17-02-17 21:56:08[main][INFO]:Hibernate 3.6.3.Final
+17-02-17 21:56:08[main][INFO]:hibernate.properties not found
+17-02-17 21:56:08[main][INFO]:Bytecode provider name : javassist
+17-02-17 21:56:08[main][INFO]:using JDK 1.4 java.sql.Timestamp handling
+17-02-17 21:56:08[main][INFO]:configuring from resource: /hibernate.cfg.xml
+17-02-17 21:56:08[main][INFO]:Configuration resource: /hibernate.cfg.xml
+17-02-17 21:56:08[main][WARN]:recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+17-02-17 21:56:09[main][INFO]:Configured SessionFactory: null
+17-02-17 21:56:09[main][INFO]:Binding entity from annotated class: com.school.db.user.Stuff
+17-02-17 21:56:09[main][INFO]:Bind entity com.school.db.user.Stuff on table Users
+17-02-17 21:56:10[main][INFO]:Binding entity from annotated class: com.school.db.user.PersonalInfo
+17-02-17 21:56:10[main][INFO]:Bind entity com.school.db.user.PersonalInfo on table PERSONAL_INFO
+17-02-17 21:56:10[main][INFO]:Binding entity from annotated class: com.school.db.user.Nationality
+17-02-17 21:56:10[main][INFO]:Bind entity com.school.db.user.Nationality on table NATIONALITIES
+17-02-17 21:56:10[main][INFO]:Binding entity from annotated class: com.school.db.user.StudentNotes
+17-02-17 21:56:10[main][INFO]:Bind entity com.school.db.user.StudentNotes on table STUDENT_NOTES
+17-02-17 21:56:10[main][INFO]:Binding entity from annotated class: com.school.db.user.FamilyInformation
+17-02-17 21:56:10[main][INFO]:Bind entity com.school.db.user.FamilyInformation on table FAMILY_INFO
+17-02-17 21:56:10[main][INFO]:Binding entity from annotated class: com.school.db.user.Student
+17-02-17 21:56:10[main][INFO]:Binding entity from annotated class: com.school.db.user.Teacher
+17-02-17 21:56:10[main][INFO]:Binding entity from annotated class: com.school.db.country.Country
+17-02-17 21:56:10[main][INFO]:Bind entity com.school.db.country.Country on table COUNTRIES
+17-02-17 21:56:10[main][INFO]:Binding entity from annotated class: com.school.db.country.State
+17-02-17 21:56:10[main][INFO]:Bind entity com.school.db.country.State on table STATES
+17-02-17 21:56:10[main][INFO]:Binding entity from annotated class: com.school.db.school.Classes
+17-02-17 21:56:10[main][INFO]:Bind entity com.school.db.school.Classes on table CLASSES
+17-02-17 21:56:10[main][INFO]:Binding entity from annotated class: com.school.db.school.Stage
+17-02-17 21:56:10[main][INFO]:Bind entity com.school.db.school.Stage on table STAGE
+17-02-17 21:56:10[main][INFO]:Binding entity from annotated class: com.school.db.school.RowsOFStage
+17-02-17 21:56:10[main][INFO]:Bind entity com.school.db.school.RowsOFStage on table Rows_OF_Stage
+17-02-17 21:56:10[main][INFO]:Binding entity from annotated class: com.school.db.school.Subject
+17-02-17 21:56:10[main][INFO]:Bind entity com.school.db.school.Subject on table SUBJECT
+17-02-17 21:56:10[main][INFO]:Binding entity from annotated class: com.school.db.exam.Question_Choise
+17-02-17 21:56:10[main][INFO]:Bind entity com.school.db.exam.Question_Choise on table question_choises
+17-02-17 21:56:10[main][INFO]:Binding entity from annotated class: com.school.db.exam.Answers
+17-02-17 21:56:10[main][INFO]:Bind entity com.school.db.exam.Answers on table answers
+17-02-17 21:56:10[main][INFO]:Binding entity from annotated class: com.school.db.exam.Exam
+17-02-17 21:56:10[main][INFO]:Bind entity com.school.db.exam.Exam on table exams
+17-02-17 21:56:10[main][INFO]:Binding entity from annotated class: com.school.db.exam.ExamType
+17-02-17 21:56:10[main][INFO]:Bind entity com.school.db.exam.ExamType on table exam_type
+17-02-17 21:56:10[main][INFO]:Binding entity from annotated class: com.school.db.exam.Question
+17-02-17 21:56:10[main][INFO]:Bind entity com.school.db.exam.Question on table questions
+17-02-17 21:56:10[main][INFO]:Mapping collection: com.school.db.exam.Question.questionChoises -> question_choises
+17-02-17 21:56:10[main][INFO]:Mapping collection: com.school.db.exam.Exam.questions -> questions
+17-02-17 21:56:10[main][INFO]:Mapping collection: com.school.db.school.Subject.exams -> exams
+17-02-17 21:56:10[main][INFO]:Mapping collection: com.school.db.school.Stage.stageRowses -> Rows_OF_Stage
+17-02-17 21:56:10[main][INFO]:Mapping collection: com.school.db.country.Country.cities -> STATES
+17-02-17 21:56:10[main][INFO]:Mapping collection: com.school.db.user.Teacher.noteses -> STUDENT_NOTES
+17-02-17 21:56:10[main][INFO]:Mapping collection: com.school.db.user.Teacher.exams -> exams
+17-02-17 21:56:10[main][INFO]:Mapping collection: com.school.db.user.Student.notes -> STUDENT_NOTES
+17-02-17 21:56:10[main][INFO]:Mapping collection: com.school.db.user.Student.answerses -> answers
+17-02-17 21:56:10[main][INFO]:Mapping collection: com.school.db.user.Stuff.nationalities -> NATIONALITIES
+17-02-17 21:56:10[main][INFO]:Hibernate Validator not found: ignoring
+17-02-17 21:56:10[main][INFO]:Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+17-02-17 21:56:10[main][INFO]:Using Hibernate built-in connection pool (not for production use!)
+17-02-17 21:56:10[main][INFO]:Hibernate connection pool size: 20
+17-02-17 21:56:10[main][INFO]:autocommit mode: false
+17-02-17 21:56:11[main][INFO]:using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@127.0.0.1:1521/orcl
+17-02-17 21:56:11[main][INFO]:connection properties: {user=school, password=****, autocommit=false}
+17-02-17 21:56:18[main][INFO]:Using dialect: org.hibernate.dialect.Oracle10gDialect
+17-02-17 21:56:18[main][INFO]:Database ->
+       name : Oracle
+    version : Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+      major : 11
+      minor : 2
+17-02-17 21:56:18[main][INFO]:Driver ->
+       name : Oracle JDBC driver
+    version : 11.2.0.1.0
+      major : 11
+      minor : 2
+17-02-17 21:56:18[main][INFO]:Using default transaction strategy (direct JDBC transactions)
+17-02-17 21:56:18[main][INFO]:No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+17-02-17 21:56:18[main][INFO]:Automatic flush during beforeCompletion(): disabled
+17-02-17 21:56:18[main][INFO]:Automatic session close at end of transaction: disabled
+17-02-17 21:56:18[main][INFO]:JDBC batch size: 15
+17-02-17 21:56:18[main][INFO]:JDBC batch updates for versioned data: disabled
+17-02-17 21:56:18[main][INFO]:Scrollable result sets: enabled
+17-02-17 21:56:18[main][INFO]:JDBC3 getGeneratedKeys(): disabled
+17-02-17 21:56:18[main][INFO]:Connection release mode: auto
+17-02-17 21:56:18[main][INFO]:Default batch fetch size: 1
+17-02-17 21:56:18[main][INFO]:Generate SQL with comments: disabled
+17-02-17 21:56:18[main][INFO]:Order SQL updates by primary key: disabled
+17-02-17 21:56:18[main][INFO]:Order SQL inserts for batching: disabled
+17-02-17 21:56:18[main][INFO]:Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+17-02-17 21:56:18[main][INFO]:Using ASTQueryTranslatorFactory
+17-02-17 21:56:18[main][INFO]:Query language substitutions: {}
+17-02-17 21:56:18[main][INFO]:JPA-QL strict compliance: disabled
+17-02-17 21:56:18[main][INFO]:Second-level cache: enabled
+17-02-17 21:56:18[main][INFO]:Query cache: disabled
+17-02-17 21:56:18[main][INFO]:Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+17-02-17 21:56:18[main][INFO]:Optimize cache for minimal puts: disabled
+17-02-17 21:56:18[main][INFO]:Structured second-level cache entries: disabled
+17-02-17 21:56:18[main][INFO]:Statistics: disabled
+17-02-17 21:56:18[main][INFO]:Deleted entity synthetic identifier rollback: disabled
+17-02-17 21:56:18[main][INFO]:Default entity-mode: pojo
+17-02-17 21:56:18[main][INFO]:Named query checking : enabled
+17-02-17 21:56:18[main][INFO]:Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+17-02-17 21:56:18[main][INFO]:building session factory
+17-02-17 21:56:18[main][INFO]:Type registration [clob] overrides previous : org.hibernate.type.ClobType@2e1d27ba
+17-02-17 21:56:18[main][INFO]:Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@2e1d27ba
+17-02-17 21:56:18[main][INFO]:Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@61d6015a
+17-02-17 21:56:18[main][INFO]:Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@2525ff7e
+17-02-17 21:56:18[main][INFO]:Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@524d6d96
+17-02-17 21:56:18[main][INFO]:Type registration [blob] overrides previous : org.hibernate.type.BlobType@152aa092
+17-02-17 21:56:18[main][INFO]:Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@152aa092
+17-02-17 21:56:18[main][INFO]:Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@44a7bfbc
+17-02-17 21:56:18[main][INFO]:Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@4ef37659
+17-02-17 21:56:19[main][INFO]:Not binding factory to JNDI, no JNDI name configured
+17-02-17 21:56:19[main][INFO]:Running hbm2ddl schema update
+17-02-17 21:56:19[main][INFO]:fetching database metadata
+17-02-17 21:56:20[main][INFO]:updating schema
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.CLASSES
+17-02-17 21:56:21[main][INFO]:columns: [id, class_name, class_num]
+17-02-17 21:56:21[main][INFO]:foreign keys: []
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011887]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.COUNTRIES
+17-02-17 21:56:21[main][INFO]:columns: [country_name, id]
+17-02-17 21:56:21[main][INFO]:foreign keys: []
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011889]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.FAMILY_INFO
+17-02-17 21:56:21[main][INFO]:columns: [father_phone, father_address, father_job, father_name, father_email, id]
+17-02-17 21:56:21[main][INFO]:foreign keys: []
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011891]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.NATIONALITIES
+17-02-17 21:56:21[main][INFO]:columns: [nationality, user_id, id]
+17-02-17 21:56:21[main][INFO]:foreign keys: [fk800e273ad62a58c3]
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011894]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.PERSONAL_INFO
+17-02-17 21:56:21[main][INFO]:columns: [fname, lname, password, address, gender, phone, birth_date, id, email, country_id, religion]
+17-02-17 21:56:21[main][INFO]:foreign keys: [fkde20e74d2301949f]
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011902]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.ROWS_OF_STAGE
+17-02-17 21:56:21[main][INFO]:columns: [stage_id, row_name, id]
+17-02-17 21:56:21[main][INFO]:foreign keys: [fke10625fc2572de3]
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011904]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.STAGE
+17-02-17 21:56:21[main][INFO]:columns: [stage_name, id, stage_year]
+17-02-17 21:56:21[main][INFO]:foreign keys: []
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011908]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.STATES
+17-02-17 21:56:21[main][INFO]:columns: [city_name, id, country_id]
+17-02-17 21:56:21[main][INFO]:foreign keys: [fk9260c2022301949f]
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011911]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.STUDENT_NOTES
+17-02-17 21:56:21[main][INFO]:columns: [note_type, teacher_id, student_id, id, note_text]
+17-02-17 21:56:21[main][INFO]:foreign keys: [fkcd5c877da335309a, fkcd5c877db3d07b3a]
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011913]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.SUBJECT
+17-02-17 21:56:21[main][INFO]:columns: [minimum_degree, stage_id, subject_name, id, maximum_degree]
+17-02-17 21:56:21[main][INFO]:foreign keys: [fkbb75e10c2572de3]
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011916]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.USERS
+17-02-17 21:56:21[main][INFO]:columns: [user_type, join_date, stage_id, class_id, personal_info_id, id, family_info_id]
+17-02-17 21:56:21[main][INFO]:foreign keys: [fk4e39de82572de3, fk4e39de8d2a1bc59, fk4e39de8bf31dd9b, fk4e39de853cadc11]
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011921]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.ANSWERS
+17-02-17 21:56:21[main][INFO]:columns: [student_id, id, choise_id, question_id]
+17-02-17 21:56:21[main][INFO]:foreign keys: [fkcd7db875a335309a, fkcd7db875c1d0abc7, fkcd7db875e0875d66]
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011926]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.EXAM_TYPE
+17-02-17 21:56:21[main][INFO]:columns: [type_name, id]
+17-02-17 21:56:21[main][INFO]:foreign keys: []
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011928]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.EXAMS
+17-02-17 21:56:21[main][INFO]:columns: [exam_type, subject_id, teacher_id, id, exam_date]
+17-02-17 21:56:21[main][INFO]:foreign keys: [fk5c74c34661d40e3, fk5c74c345b369cbf, fk5c74c34b3d07b3a]
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011932]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.QUESTION_CHOISES
+17-02-17 21:56:21[main][INFO]:columns: [choise_number, id, question_id, answer_choise, is_true]
+17-02-17 21:56:21[main][INFO]:foreign keys: [fkccf12fa9e0875d66]
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011935]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.QUESTIONS
+17-02-17 21:56:21[main][INFO]:columns: [id, question_title, question_number, exam_id]
+17-02-17 21:56:21[main][INFO]:foreign keys: [fk95c5414da78f5cc6]
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011938]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.STUDENT_SUBJECT
+17-02-17 21:56:21[main][INFO]:columns: [subject_id, student_id]
+17-02-17 21:56:21[main][INFO]:foreign keys: [fkbb5c1328a335309a, fkbb5c1328661d40e3]
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011941]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.TEACHERS_CLASSES
+17-02-17 21:56:21[main][INFO]:columns: [teacher_id, class_id]
+17-02-17 21:56:21[main][INFO]:foreign keys: [fk7ca72eb8b3d07b3a, fk7ca72eb853cadc11]
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011944]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.TEACHERS_STAGES
+17-02-17 21:56:21[main][INFO]:columns: [teacher_id, stage_id]
+17-02-17 21:56:21[main][INFO]:foreign keys: [fk28058c632572de3, fk28058c63b3d07b3a]
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011947]
+17-02-17 21:56:21[main][INFO]:table found: SCHOOL.TEACHERS_SUBJECTS
+17-02-17 21:56:21[main][INFO]:columns: [subject_id, teacher_id]
+17-02-17 21:56:21[main][INFO]:foreign keys: [fk73992c75b3d07b3a, fk73992c75661d40e3]
+17-02-17 21:56:21[main][INFO]:indexes: [sys_c0011950]
+17-02-17 21:56:21[main][INFO]:schema update complete

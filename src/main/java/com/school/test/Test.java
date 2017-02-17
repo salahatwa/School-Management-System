@@ -13,6 +13,7 @@ import com.school.db.user.Student;
 import com.school.db.user.Stuff;
 import com.school.dao.UserDAO;
 import com.school.dao.UserImplement;
+import com.school.db.school.RowsOFStage;
 import java.util.Date;
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -223,13 +224,29 @@ public class Test extends HibernateDriver{
 //      test.testDataBase();
 //      test.insertExamType();
 //      test.insertStudent();
-      test.insertAdmin();
+//      test.insertAdmin();
+      test.insertStage();
 //       test.getUser();
     }
     
     public void insertStage()
     {
+        openSession();
         
+        RowsOFStage rowsOFStage=new RowsOFStage();
+        rowsOFStage.setRowName("First class Name");
+        
+        Set<RowsOFStage> ss=new LinkedHashSet<>();
+        ss.add(rowsOFStage);
+        
+        Stage stage=new Stage();
+        stage.setStageName("Console Stage");
+        stage.setStageYear("2105");
+        stage.setStageRowses(ss);
+        
+        getSession().save(stage);
+        
+        closeSession();
     }
     
 }
